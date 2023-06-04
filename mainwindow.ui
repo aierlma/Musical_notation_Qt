@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>291</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playbutton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>play music</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>30</y>
+      <width>471</width>
+      <height>531</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UpdateNote">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>0</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>UpdateNote</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="updateNoteonScence">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>update on Scene</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveNote">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>0</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>saveNote</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playScene">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>0</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>play Note</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionDoc"/>
+   </widget>
+   <widget class="QMenu" name="menupre_beats">
+    <property name="title">
+     <string>pre_beats</string>
+    </property>
+    <widget class="QMenu" name="menuC_major">
+     <property name="title">
+      <string>C</string>
+     </property>
+     <addaction name="actionC_minor"/>
+     <addaction name="actionC_minor_2"/>
+    </widget>
+    <widget class="QMenu" name="menuD">
+     <property name="title">
+      <string>D</string>
+     </property>
+     <addaction name="actionD_major_2"/>
+     <addaction name="actionD_minor"/>
+    </widget>
+    <widget class="QMenu" name="menuE">
+     <property name="title">
+      <string>E</string>
+     </property>
+     <addaction name="actionE_major_2"/>
+     <addaction name="actionE_minor"/>
+    </widget>
+    <widget class="QMenu" name="menuF">
+     <property name="title">
+      <string>F</string>
+     </property>
+     <addaction name="actionF_major_2"/>
+     <addaction name="actionF_minor"/>
+    </widget>
+    <widget class="QMenu" name="menuG">
+     <property name="title">
+      <string>G</string>
+     </property>
+     <addaction name="actionG_major_2"/>
+     <addaction name="actionG_minor"/>
+    </widget>
+    <widget class="QMenu" name="menuA">
+     <property name="title">
+      <string>A</string>
+     </property>
+     <addaction name="actionA_major_2"/>
+     <addaction name="actionA_minor"/>
+    </widget>
+    <widget class="QMenu" name="menuB">
+     <property name="title">
+      <string>B</string>
+     </property>
+     <addaction name="actionB_major_2"/>
+     <addaction name="actionB_minor"/>
+    </widget>
+    <addaction name="action8_16_16"/>
+    <addaction name="action16_16_8"/>
+    <addaction name="menuC_major"/>
+    <addaction name="menuD"/>
+    <addaction name="menuE"/>
+    <addaction name="menuF"/>
+    <addaction name="menuG"/>
+    <addaction name="menuA"/>
+    <addaction name="menuB"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menupre_beats"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionDoc">
+   <property name="text">
+    <string>Doc</string>
+   </property>
+  </action>
+  <action name="action8_16_16">
+   <property name="text">
+    <string>8 8 16</string>
+   </property>
+  </action>
+  <action name="action16_16_8">
+   <property name="text">
+    <string>16 16 8</string>
+   </property>
+  </action>
+  <action name="actionC_minor">
+   <property name="text">
+    <string>C major</string>
+   </property>
+  </action>
+  <action name="actionC_minor_2">
+   <property name="text">
+    <string>C minor</string>
+   </property>
+  </action>
+  <action name="actionD_major_2">
+   <property name="text">
+    <string>D major</string>
+   </property>
+  </action>
+  <action name="actionD_minor">
+   <property name="text">
+    <string>D minor</string>
+   </property>
+  </action>
+  <action name="actionE_major_2">
+   <property name="text">
+    <string>E major</string>
+   </property>
+  </action>
+  <action name="actionE_minor">
+   <property name="text">
+    <string>E minor</string>
+   </property>
+  </action>
+  <action name="actionF_major_2">
+   <property name="text">
+    <string>F major</string>
+   </property>
+  </action>
+  <action name="actionF_minor">
+   <property name="text">
+    <string>F minor</string>
+   </property>
+  </action>
+  <action name="actionG_major_2">
+   <property name="text">
+    <string>G major</string>
+   </property>
+  </action>
+  <action name="actionG_minor">
+   <property name="text">
+    <string>G minor</string>
+   </property>
+  </action>
+  <action name="actionA_major_2">
+   <property name="text">
+    <string>A major</string>
+   </property>
+  </action>
+  <action name="actionA_minor">
+   <property name="text">
+    <string>A minor</string>
+   </property>
+  </action>
+  <action name="actionB_major_2">
+   <property name="text">
+    <string>B major</string>
+   </property>
+  </action>
+  <action name="actionB_minor">
+   <property name="text">
+    <string>B minor</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
